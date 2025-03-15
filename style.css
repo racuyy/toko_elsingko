@@ -1,0 +1,162 @@
+@media (max-width: 768px) {
+    .product-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+    .product {
+        width: 45%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: lightblue;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: rgb(122, 202, 232);
+    margin-top: 1em;
+    padding: 1em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-list {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.name {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x:scroll;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.star {
+    color : orangered;
+
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product a {
+    color: black;
+}
+
+.price {
+    font-weight: bold;
+    color: black;
+}
+
+#promo {
+    margin-top: 2em;
+}
+
+.promo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+.promo a {
+    color: black;
+}
+
+.promo img {
+    width: 50%;
+    height: auto;
+}
+
+.promo h3 {
+    color: #ff0000;
+}
+
+.price-discount {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.price-diskon {
+    color: gray;
+    text-decoration: line-through;
+}
+
+#contact {
+    margin-top: 2em;
+    text-align: center;
+    width: 100vw;
+    padding: 3em;
+}
+
+#contact a {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 3em;
+    background-color: lightblue;
+    color: #fff;
+    margin-top: 2em;
+}
